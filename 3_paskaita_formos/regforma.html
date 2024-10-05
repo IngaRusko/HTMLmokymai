@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma namų darbas</title>
+    <style>
+        .contct-title{
+            color:blue;
+            font-style: bold;
+        }
+        .form_item{
+            /*padding: 16px;*/
+            margin: 10px;
+        }
+        .button:hover{
+            cursor: pointer;
+            color: blueviolet;
+            background-color: greenyellow;
+        }
+        </style>
+</head>
+<body>
+    <h1 class="contct-title">Registracijos forma</h1>
+    <form class="contact-form">
+    <div class="form_item">
+        <label for="name">Vardas</label>
+        <input 
+        type="text" 
+        id="name" 
+        placeholder="Įrašykite vardą..."
+        required
+        />
+    </div>
+
+    <div class="form_item">
+        <label for="surname">Pavardė</label>
+        <input 
+        type="text" 
+        id="surname" 
+        placeholder=""
+        required
+        />
+    </div>
+
+    <div class="form_item">
+        <label for="email">El. paštas</label>
+        <input 
+        type="email" 
+        id="email" 
+        placeholder=""
+        required
+        />
+    </div>
+
+    <div class="form_item">
+        <label for="password">Slaptažodis</label>
+        <input 
+        type="password" 
+        id="password" 
+        placeholder=""
+        required
+        />
+    </div>
+<br>
+    <button class="button" type="submit">Registruotis</button>
+</br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="lt"> 
+    <head> 
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Flexbox Puslapio Išdėstymas</title>
+        <!-- Susiejame HTML su CSS failu --> 
+         <link rel="stylesheet" href="styles.css"> 
+        </head> 
+        <style>
+/* Pagrindiniai stiliai */ 
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+} 
+header, footer { 
+    background-color: #333; 
+    color: #fff; padding: 20px; 
+    text-align: center; 
+} 
+    .header h1 { 
+        margin: 0; 
+    } 
+    /* Antraštės navigacija */ 
+    .nav-list { 
+        list-style-type: none; 
+        padding: 0; 
+        margin: 10px 0; } 
+        .nav-list li { 
+            display: inline; 
+            margin-right: 20px;
+         } 
+         .nav-list li a { 
+            color: #fff; 
+            text-decoration: none; 
+        } 
+        .nav-list li a:hover { 
+            text-decoration: underline; 
+        } 
+        /* Flexbox pagrindinis turinys */ 
+        .main-content { 
+            display: flex; 
+            margin: 20px; } 
+            /* Šoninė juosta */ 
+            .sidebar { 
+                background-color: #ddd; 
+                padding: 20px; 
+                width: 25%; 
+                box-sizing: border-box; 
+            } 
+            .sidebar ul { 
+                list-style-type: none; 
+                padding: 0; 
+            } 
+            .sidebar ul li { 
+                margin-bottom: 10px; 
+            } 
+            /* Pagrindinis skyrius */ 
+            .content { 
+                background-color: #fff; 
+                padding: 20px; 
+                width: 75%; 
+                box-sizing: border-box; 
+                margin-left: 20px; 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            } 
+            /* Poraštė */ 
+            .footer { 
+                background-color: #333; 
+                color: #fff; 
+                padding: 20px; 
+                text-align: center; 
+                position: absolute; 
+                bottom: 0; 
+                width: 100%; }
+        </style>
+        <body> 
+            <!-- Antraštė --> 
+             <header class="header"> 
+                <h1>Mano Svetainė</h1> 
+                <nav> 
+                    <ul class="nav-list"> 
+                        <li><a href="#">Pradžia</a></li> 
+                        <li><a href="#">Apie</a></li> 
+                        <li><a href="#">Paslaugos</a></li> 
+                        <li><a href="#">Kontaktai</a></li> 
+                    </ul> 
+                </nav> 
+            </header> 
+            <!-- Pagrindinis turinys --> 
+             <div class="main-content"> 
+                <!-- Šoninė juosta --> 
+                 <aside class="sidebar"> 
+                    <h2>Šoninė juosta</h2> 
+                    <ul> 
+                        <li><a href="#">Nuoroda 1</a></li> 
+                        <li><a href="#">Nuoroda 2</a></li> 
+                        <li><a href="#">Nuoroda 3</a></li> 
+                    </ul> 
+                </aside> 
+                <!-- Pagrindinis skyrius --> 
+                 <section class="content"> 
+                    <h2>Pagrindinis turinys</h2> 
+                    <p>Čia galite įtraukti bet kokį pagrindinį turinį. Naudodami Flexbox lengvai galite pritaikyti puslapio išdėstymą pagal savo poreikius.</p> 
+                </section> 
+            </div> 
+            <!-- Poraštė --> 
+             <footer class="footer"> 
+                <p>&copy; 2024 Mano Svetainė. Visos teisės saugomos.</p> 
+            </footer> 
+        </body> 
+        </html> 

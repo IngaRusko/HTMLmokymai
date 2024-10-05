@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma namų darbas</title>
+    <style>
+        
+        .contct-title{
+            color:blue;
+            font-style: bold;
+            font-size: large;
+        }
+        .form_item{
+            padding: 16px;
+            margin: 10px;
+        }
+        .button:hover{
+            cursor: pointer;
+            color: blueviolet;
+            background-color: greenyellow;
+        }
+        </style>
+</head>
+<body>
+    <h1 class="title">Atsiliepimų forma</h1>
+    <form class="form">
+    <div class="form_item">
+        <label for="name">Vardas:</label>
+        <input 
+        type="text" 
+        id="name" 
+        placeholder=""
+        required
+        />
+    </div>
+
+    <div class="form_item">
+        <label for="email">El. paštas:</label>
+        <input 
+        type="email" 
+        id="email" 
+        placeholder=""
+        required
+        />
+    </div>
+
+    <div class="form_item">
+        <label for="number">Įvertinimas</label>
+        <select name="number" id="number">
+            <option value="one">1 - Blogai</option>
+            <option value="two">2 - Patenkinamai</option>
+            <option value="three">3 - Gerai</option>
+            <option value="four">4 - Labai gerai</option>
+            <option value="five">5 - Puikiai</option>
+        </select>    
+    </div>
+
+         <br />
+    <label for="comments">Komentarai:</label>
+    <textarea id="comments" name="comments" rows="5" required></textarea>
+    <br />
+
+  <br>
+    <button class="button" type="submit">Pateikti</button>
+</br>
+    </form>
+</body>
+</html>
