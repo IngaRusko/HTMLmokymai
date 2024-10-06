@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* kad elementas neišlįstų iš savo ribų */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header,
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    display: flex; /* flex box pritaikymas */
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .column {
+    background-color: white;
+    padding: 20px;
+    width: 50%; /* Ant didelio ekrano užima 50% pločio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    
+    main {
+        flex-direction: column;
+        padding: 10px;
+      /* flex-wrap: wrap; Ant mažo ekranto perkelia į sekančią eilutę */
+    }
+  
+    .column {
+      width: 100%; /* Ant mažo ekranto užima 100% pločio */
+    } 
+   
+      }
